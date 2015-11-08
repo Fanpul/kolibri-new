@@ -93,7 +93,6 @@ body{
 	background: #fff;
 	margin: 50px auto;
 	box-shadow: 2px 2px 5px #E6E4E4, -2px -2px 5px #E6E4E4;
-/*	height: 400px;*/
 }
 
 .top-line {
@@ -196,11 +195,12 @@ ul.menu-cat li a:hover {
 	background: #C983B1;
 }
 
-/******/
+
 .caroosel {
 	height: 50px;
 }
-/*****/
+
+
 header {
 	padding: 20px;
 	height: 125px;
@@ -333,3 +333,124 @@ menu li a{
 	margin-bottom:10px ;
 /*	width: 367px;*/
 }
+
+
+.new {
+	height: 43px;
+	background: url(../img/new.png);
+	width: 200px;
+	position: relative;
+}
+
+.new p.newsale {
+	line-height: 43px;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 17px;
+}
+
+/*product*/
+.main-products {
+	padding: 20px;
+	text-align: justify;
+}
+
+.main-products:after {
+	content: ' i i i i i i ';
+	display: inline;
+	word-spacing: 247px;
+    padding-left: 247px;
+    visibility: hidden;
+}
+
+.product {
+	width: 250px;
+	border: 1px solid #E6E4E4;
+	box-shadow: 2px 2px 2px #E6E4E4;
+	padding: 10px;
+	margin: 0 0 20px;
+	display: inline-block;
+	height: 340px;
+	vertical-align: top;
+}
+
+.product-pic {
+	height: 230px;
+	overflow: hidden;
+}
+
+.product-pic img {
+	max-width: 100%;
+}
+
+.product-name {
+	text-align: center;
+	padding: 10px;
+}
+
+.product-name a {
+	text-decoration: none;
+	color: #AF6195;
+	font-size: 16px;
+}
+
+.product-name a:hover {
+	text-decoration: underline;
+}
+
+.tocart,
+.price {
+	width: 50%;
+	float: left;
+	padding: 5px;
+}
+
+.tocart a {
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px #808080;
+	height: 35px;
+	line-height: 32px;
+	text-align: center;
+	background: #6fc5c9;
+	border-bottom: 5px solid #61acaf;
+}
+
+.tocart a:hover {
+	opacity: .8;
+}
+
+.price span {
+	display: block;
+	height: 35px;
+	font: 16px/35px "RobotoRegular", arial, sans-serif;
+	padding: 0 20px;
+	white-space: nowrap;
+	font-weight: bold;
+	color: #539395;
+}
+
+
+
+
+
+
+
+/* .tocart a {
+	height: 40px;
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	//font-weight: bold;
+	text-shadow: 1px 1px 1px #FEA8DF;
+	line-height: 40px;
+	text-align: center;
+	background: #FDC1E7;
+	border-bottom: 5px solid #FEA8DF;
+} */
+
