@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
+	<div class="container-fluid">
 	<div class="top-line">
 		<div class="container">
 			<div class="client-panel">
@@ -44,12 +45,13 @@
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Корзина</a></li>
 				</menu>
-				<div class="search-wrap col-md-4 col-md-offset-2">
-					
-					<input type="text" class="search" placeholder="Поиск...">
-					
-				</div>
-				<div class="basket-wrap col-md-6">
+				<form action="" class="col-md-4 col-md-offset-3 search-form">
+					<div class="search-wrap">
+						<input type="text" class="search" placeholder="Поиск...">
+					</div>
+					<input type="submit" class="go-search" value="">
+				</form>
+				<div class="basket-wrap col-md-5">
 					<a href="#">
 						<b>Корзина:</b>
 						<span class="info-but"></span>
@@ -60,7 +62,6 @@
 						</span>
 					</a>
 				</div>
-				<div class="search"></div>
 			</div>
 		</header>
 		<div class="row">
@@ -77,12 +78,11 @@
 				<img src="img/%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B1.jpg" class="col-md-4" height="140" width="200" alt="">
 			</div>
 		</div>
-			<div class="caroosel"></div>
 			<div class="row">
-			<div class="new">
-				<p class="newsale">Новинки</p>
+				<div class="new">
+					<p class="newsale">Новинки</p>
+				</div>
 			</div>
-		</div>
 		<div class="row main-products">
 			<div class="product">
 				<div class="product-pic">
@@ -204,10 +204,28 @@
 				<div class="clear"></div>
 			</div>
 		</div>
-		</div>
+		
+		
 		
 
 	</div>
+	<div class="footer-wrap">
+		<footer class="footerstyle container">
+			<div class="row">
+				<a href="#" class="col-xs-3">Обратная Связь</a>
+				<a href="#" class="col-xs-3">Отзывы</a>
+				<a href="#" class="col-xs-3">О Нас</a>
+				<a href="#" class="col-xs-3">Корзина</a>
+			</div>
+			<div class="informer">
+				<h4 class="copright">Колибри © 2015</h4>
+				
+			</div>
+		</footer>
+	</div>
+	
+	
+	</div>  <!--	 //End of container fluid-->
 
 
 
