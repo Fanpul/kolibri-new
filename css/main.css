@@ -259,7 +259,7 @@ menu li a{
 .basket-wrap {
 	float: right;
     background: #FEE7D1;
-    padding: 4px 16px 0 17px;
+    padding: 4px 0px 0 15px;
     height: 32px;
 }
 .basket-wrap b{
@@ -297,7 +297,7 @@ menu li a{
 
     float: right;
     padding: 0 0 0px 0px;
-    margin: 8px 0 0 27px;
+    margin: 8px 0 0 7px;
 }
 
 
@@ -518,16 +518,20 @@ menu li a{
 	width: 31px;
 	height: 32px;
 /*	display: block;*/
-	background:url(../img/search.png) -2px -1px pink;
+	background:url(../img/search.png) -1px -1px pink;
 	display: block;
 	float: left;
 	box-sizing: border-box;
-	border: 1px solid #DE7D66;
+/*	border: 1px solid #DE7D66;*/
+	border: none;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+/*	box-shadow: -4px 7px 17px -3px brown;*/
 }
 .go-search:hover{
-	background:url(../img/search.png) -2px -1px hotpink;
+	background:url(../img/search.png) -1px -1px hotpink;
+	border-radius: 8px;
+	box-shadow: -3px 7px 17px -3px brown;
 }
 
 .search-form {
