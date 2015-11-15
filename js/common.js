@@ -83,8 +83,20 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	
-	
+	//Slider price!!!!!
+	 $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 100, 400 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.values[ 0 ]+"грн." + " - " + ui.values[ 1 ]+"грн." );
+      }
+    });
+    $( "#amount" ).val($( "#slider-range" ).slider( "values", 0 )+"грн." +
+      " - " + $( "#slider-range" ).slider( "values", 1 )+"грн." );
+  });
 	
 	
 	

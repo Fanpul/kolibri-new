@@ -44,8 +44,7 @@ h1, h2 {
   color: #545454;
 }
 
-*{
-  -webkit-box-sizing: border-box; 
+*{ 
   box-sizing: border-box;
 }
 
@@ -516,4 +515,232 @@ ul.menu-cat li a:hover {
 	padding: 20px 0;
 	text-align: justify;
 	text-shadow: 1px 1px 1px #AF6195;
+}
+.list-category {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.list-category>li>a{
+	display: block;
+	height: 50px;
+	width: 220px;
+	line-height: 50px;
+	text-decoration: none;
+	padding-left: 20px;
+	box-sizing: border-box;
+	margin-bottom: 13px;
+	background: #6FC5C9;
+	border-radius: 0 30px 30px 0;
+	font-size: 1.3em;
+	color: white;
+	font-weight: 600;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+/*	box-shadow: 6px 7px 42px 3px hotpink;*/
+}
+.list-category>li>a:before{
+	content: "";
+	height: 50px;
+	width: 36px;
+	box-sizing: border-box;
+	border-right: 3px solid #FFD22A;
+	position: absolute;
+	left: -21px;
+/*	top: 10px;*/
+	background: hotpink;
+	
+	border-radius: 30px 0 0px 30px;
+}
+.list-category>li>a:hover{
+	background: hotpink;
+	color: #e4efef;
+/*	width: 250px;*/
+	color: #FFD22A;
+	box-shadow: 6px 7px 42px 3px hotpink;
+}
+.list-category>li>a:hover  .list-category>li>a:before{
+	background: red;
+	width: 16px;
+}
+
+.filter-price {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.slider-price {
+	margin-top: 15px;
+	width: 220px;
+}
+
+.pick-size-list {
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.pick-size-list label{
+	margin: 0 15px;
+	height: 30px;
+	line-height: 30px;
+display: block;
+cursor: pointer;
+position: relative;
+padding: 0 10px 0 25px;
+border-bottom: 1px solid #ddebfd;
+/*	position: relative*/
+}
+.pick-size-list label:before{
+	content: "";
+height: 14px;
+width: 14px;
+top: 65%;
+left: 0;
+margin-top: -10px;
+position: absolute;
+border-width: 3px;
+border-style: solid;
+ border-radius:50%;
+}
+.pick-size-list label:after {
+content: "";
+top: 50%;
+left: 4px;
+margin-top: -3px;
+position: absolute;
+border-width: 3px;
+border-style: solid;
+opacity:0;
+border-radius:50%;
+-webkit-transition:all .2s linear;
+transition:all .2s linear;
+}
+input[type="radio"] {
+display: none;
+}
+input[type="radio"]:checked + label:after {
+opacity:1;
+}
+.pick-size-list li:nth-child(1) label:before,
+.pick-size-list li:nth-child(1) label:after {
+border-color: #5db6e2;
+}
+.pick-size-list li:nth-child(2) label:before,
+.pick-size-list li:nth-child(2) label:after {
+border-color: #c0a2f1;
+}
+.pick-size-list li:nth-child(3) label:before,
+.pick-size-list li:nth-child(3) label:after {
+border-color: #f7a238;
+}
+
+.pick-size-box {
+	margin-top: 10px;
+}
+
+.choose-size {
+	font-size: 1.3em;
+	color: hotpink;
+}
+
+.size-but {
+	border: none;
+	height: 30px;
+	width: 90px;
+	font-size: 1.4em;
+	color: azure;
+	background: #22afb5;
+	margin-top: 10px;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.size-but:hover{
+	opacity: .9;
+	box-shadow: 6px 10px 50px -4px #898989;
+}
+
+.product-info {
+/*	background: azure;*/
+	border:2px solid #eee;
+	height: 1000px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.product-img-link {
+	
+	height: 321px;
+	display: block;
+	border: 10px solid #eee;
+	box-sizing: border-box;
+	padding: 0;
+}
+.product-img-link img{
+	width: 290px;
+	height: 300px;
+}
+
+.item-name {
+	font-size: 2em;
+/*	font-weight:bold;*/
+	padding-bottom:15px;
+	border-bottom: 1px solid #eee;
+	text-transform: uppercase;
+}
+
+.description-item-text {
+	color: #A6A4A4;
+    font-weight: bold;
+	font-size:1.2em;
+	margin-top: 28px;
+}
+
+.presence-item {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+.presence-box {
+	height: 50px;
+	line-height: 40px;
+	margin: 0 0 20px;
+}
+
+.price-item-box {
+	background: #F7F7F7;
+    padding: 12px 5px 10px 18px;
+    font-size: 22px;
+    color: #765F59;
+    margin-bottom: 5px;
+}
+
+.payment {
+	margin-top: 30px;
+	height: 28px;
+}
+.payment label{
+	font-weight: bold;
+	margin-right: 5px;
+}
+#count-item{
+	width: 40px;
+}
+.payment .buy-item-but{
+	font-size: 18px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 6px 10px 6px 10px;
+    line-height: 22px;
+    margin-top: 0px;
+/*    float: left;*/
+    margin-left: 20px;
+	background: pink;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.payment .buy-item-but:hover{
+	background: hotpink;
+	box-shadow: 10px 3px 30px 1px pink;
 }
