@@ -813,7 +813,7 @@ border-color: #f7a238;
 .reviews-box {
 	clear: both;
 	height: 400px;
-	padding: 20px 0 0 15p;
+	padding: 20px 0 0 15px;
 	box-sizing: border-box;
 }
 .reviews-box input[type="submit"]{
@@ -833,6 +833,12 @@ border-color: #f7a238;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
+	margin-left: 5px;
+}
+.reviews-box input:hover{
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	background: hotpink;
 }
 
 .reviews-area {
@@ -843,8 +849,35 @@ border-color: #f7a238;
 	-webkit-transition: all .6s;
 	transition: all .6s;
 	padding: 15px;
+	margin-bottom: 5px;
 }
 .reviews-area:focus {
 	border-color: hotpink;
 	height: 150px;
+}
+
+.comment-user {
+	margin-top: 20px; 
+}
+
+.info-and-comment {
+	margin-top: 20px;
+}
+
+.comment-field {
+	border-top:1px solid silver;
+	margin-top: 10px;
+	padding: 10px 0;
+	font-size: 1.2em;
+}
+
+.name {
+	color: hotpink;
+	font-weight: bold;
+}
+
+.date {
+	margin-left: 15px;
+	font-style: italic;
+	color: #6FC5C9;
 }
