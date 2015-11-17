@@ -749,7 +749,7 @@ border-color: #f7a238;
 }
 .payment .buy-item-but:hover{
 	background: hotpink;
-	box-shadow: 10px 3px 30px 1px pink;
+	box-shadow: 4px 5px 30px -1px pink;
 }
 
 .col-md-5 {
@@ -808,4 +808,43 @@ border-color: #f7a238;
 	border-bottom: 4px solid #6FC5C9;
 	background: rgba(195, 58, 121, 0.49);
 	text-align: center;
+}
+
+.reviews-box {
+	clear: both;
+	height: 400px;
+	padding: 20px 0 0 15p;
+	box-sizing: border-box;
+}
+.reviews-box input[type="submit"]{
+	background:#6FC5C9;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+.reviews-box input[type="reset"]{
+	background: #6FC5C9;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+.reviews-area {
+	height: 80px;
+	width: 100%;
+	border-radius:20px;
+	border: 2px solid #6FC5C9;
+	-webkit-transition: all .6s;
+	transition: all .6s;
+	padding: 15px;
+}
+.reviews-area:focus {
+	border-color: hotpink;
+	height: 150px;
 }
