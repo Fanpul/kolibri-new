@@ -456,7 +456,7 @@ ul.menu-cat li a:hover {
 	transform: scale(1.2);
 }
 .product-pic:before{
-	content: "Подробнее";
+	content: "";
 	font-size: 12px;
 	color: #030303;
 	height: 132px;
@@ -642,7 +642,7 @@ ul.menu-cat li a:hover {
 }
 .list-category>li:hover .submenu>li:nth-child(2) a{
 	-webkit-transition: all 0.4s ease-in 2s; 
-	transition: height 0.4s ease-in .3s,opacity 1s ease-out .3s;
+	transition: height 0.4s ease-in ,opacity 1s ease-out ;
 	height:40px;
 	opacity:1;
 	margin-bottom: 5px;
@@ -650,7 +650,7 @@ ul.menu-cat li a:hover {
 }
 .list-category>li:hover .submenu>li:nth-child(3) a{
 	-webkit-transition: all 0.4s ease-in .5s;
-	transition: height 0.4s ease-in .6s,opacity 1s ease-out .5s ;
+	transition: height 0.4s ease-in ,opacity 1s ease-out  ;
 	height: 40px;
 	opacity:1;
 	margin-bottom: 5px;
