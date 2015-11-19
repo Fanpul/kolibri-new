@@ -444,12 +444,13 @@ ul.menu-cat li a:hover {
 .product-pic img {
 	max-width: 100%;
 	position: relative;
+	-webkit-transition: all .5s ease-in;
+	transition: all .3s ease-in;
 }
 .product-pic:hover img{
 	-webkit-filter:  brightness(.8);
 	filter: saturate(3.2);
-	-webkit-transition: all .5s ease-in;
-	transition: all .3s ease-in;
+	
 	-webkit-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
