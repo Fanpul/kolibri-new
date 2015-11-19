@@ -98,9 +98,13 @@ $(document).ready(function() {
       " - " + $( "#slider-range" ).slider( "values", 1 )+"грн." );
   });
 	
-	
-	
-	
-        
-
+//	Zomm option !!!!!!!!!!!!!!!!!!!!
+	$('#img-zoom').elevateZoom({
+	tint:true,
+	tintColour:'#F90',
+	easing : true,
+	zoomWindowFadeIn: 500,
+	zoomWindowFadeOut: 350
+	});
+//	Zoom option!!!!!!!!!!!!
 });
