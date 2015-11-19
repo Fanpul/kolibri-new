@@ -21,17 +21,24 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link href='https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="wrapper-mainer">
 	<div class="top-line">
 		<div class="container">
+		<div class="phone-box">
+			<span>+3 (050) 59 59 335</span>
+			<span>+3 (050) 59 59 335</span>
+			<span>+3 (050) 59 59 335</span>
+			<div class="clear"></div>
+		</div>
 			<div class="client-panel">
 				<p class="client-btn"><span>Кабинет клиента</span></p>	
 				<ul class="menu-top">
 					<li><a href="#">Вход</a></li>
 					<li><a href="#">Регистрация</a></li>
-				</ul>	
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -48,7 +55,7 @@
 				</form>
 				<div class="basket-wrap col-md-5">
 					<a href="#">
-						<b>Корзина:</b>
+						<b>Корзина <i class="icon-basket"></i>:</b>
 						<span class="info-but"></span>
 						<span class="cart-sum">
 							<span class="cart-item-count">1</span>
@@ -63,17 +70,16 @@
 			<ul class="menu-cat">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Корзина</a></li>
-				<li><a href="#">Контакты</a></li>
 				<li><a href="#">Отзывы</a></li>
 				<li><a href="#">О нас</a></li>
 			</ul>
 		</div>
 		<div class="row">
-			<div class="caroosel">
-				<img src="img/618x230.jpg" alt="">
+			<div class="caroosel col-md-12">
+				<img class="col-md-12" src="img/618x230.jpg" alt="">
 			</div>
 		</div>
-<div class="row">
+<div class="row stick-label">
 	<div class="new">
 		<p class="newsale">Новинки</p>
 	</div>
@@ -82,8 +88,22 @@
 		
 		<div class="menu-category col-md-3">
 			<ul class="list-category">
-				<li><a href="#">Летняя коллекция</a></li>
-				<li><a href="#">Зимняя коллекция</a></li>
+				<li><a href="#">Летняя коллекция</a>
+					<ul class="submenu">
+						<li><a href="#">Штанишки1</a></li>
+						<li><a href="#">Штанишки2</a></li>
+						<li><a href="#">Штанишки3</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="#">Зимняя коллекция</a>
+					<ul class="submenu">
+						<li><a href="#">Штанишки1</a></li>
+						<li><a href="#">Штанишки2</a></li>
+						<li><a href="#">Штанишки3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Новинки</a></li>
 			</ul>
 			<div class="choose-price">
 				<p>
@@ -238,7 +258,15 @@
 	</div> <!--container content-wrapper-->
 </div> <!--container wrapper-mainer-->
 <footer class="site-footer">
-	<div class="footer-info"><div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam deserunt doloremque consectetur beatae ad, totam similique repellendus maxime cum! Ex vero, accusantium fuga nostrum quas, maiores enim quibusdam qui. Voluptatibus, assumenda doloremque nesciunt nulla sint, suscipit autem illo harum, maiores nemo dolorem enim ipsam voluptates qui architecto iste neque.</p></div></div>
+	<div class="footer-info"><div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis magnam deserunt doloremque consectetur beatae ad, totam similique repellendus maxime cum! Ex vero, accusantium fuga nostrum quas, maiores enim quibusdam qui. Voluptatibus, assumenda doloremque nesciunt nulla sint, suscipit autem illo harum, maiores nemo dolorem enim ipsam voluptates qui architecto iste neque.</p>
+	<div class="phone-box">
+			<span>+3 (050) 59 59 335</span>
+			<span>+3 (050) 59 59 335</span>
+			<span>+3 (050) 59 59 335</span>
+			<div class="clear"></div>
+		</div>
+	</div>
+	</div>
 	<div class="footer-copy"><div class="container"><p>Интернет-магазин "Колибри" &copy; 2015-2016 г.</p></div></div>
 </footer>
 	<!--[if lt IE 9]>

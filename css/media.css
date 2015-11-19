@@ -47,7 +47,8 @@
 
 	.new {
 		margin: 0 0 0 -20px;
-	}
+		
+}
 	
 	ul.menu-cat:before {
 		content: "";
@@ -79,9 +80,10 @@
 		height: 20px;
 		width: 20px;
 		top: 100%;
+		right: 0;
 		border: 10px solid transparent;
 		border-top: 10px solid #61acaf;
-		border-right: 10px solid #61acaf;
+		border-left: 10px solid #61acaf;
 	}
 }
 
