@@ -840,6 +840,8 @@ border-color: #f7a238;
     font-weight: bold;
 	font-size:1.2em;
 	margin-top: 28px;
+	min-height: 69px;
+	box-sizing: border-box;
 }
 
 .presence-item {
@@ -849,9 +851,9 @@ border-color: #f7a238;
 
 
 .presence-box {
-	height: 50px;
+	height: 110px;
 	line-height: 40px;
-	margin: 0 0 20px;
+	margin: 0 0 11px;
 }
 
 .price-item-box {
