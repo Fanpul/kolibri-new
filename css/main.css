@@ -580,6 +580,11 @@ ul.menu-cat li a:hover {
 	background: #e292c7;
 
 }
+.footer-copy .social-but{
+	float: right;
+	background: azure;
+	height: 50px;
+}
 
 .footer-copy p {
 	height: 50px;
@@ -607,12 +612,15 @@ ul.menu-cat li a:hover {
 	margin: 0;
 	margin-left: 20px
 }
+.list-category>li{
+		margin-bottom: 13px;
+}
 .list-category .submenu{
 	list-style: none;
 	width: 207px;
 	margin: 0;
 	padding: 0;
-
+/*	margin-bottom: 10px;*/
 }
 .list-category .submenu>li{
 /*	height: 30px;*/
@@ -633,19 +641,27 @@ ul.menu-cat li a:hover {
 	box-shadow: 5px 1px 10px silver;
 	-webkit-transition: height 0.4s ease-in , opacity 1s ease-out;
 	transition: height 0.4s ease-in , opacity .4s ease-out;
+
 }
 .list-category .submenu>li>a{
 /*	display: none;*/
 	height: 0px;
 }
-
+.active-but-menu{
+	-webkit-transition: all 0.4s ease-in;
+	transition: height 0.4s ease-in .1s, opacity 1s ease-out;
+	height:40px !important;
+	opacity:1 !important;
+	margin-bottom: 5px;
+}
+/*
 .list-category>li:hover .submenu>li:nth-child(1) a{
 	-webkit-transition: all 0.4s ease-in;
 	transition: height 0.4s ease-in .1s, opacity 1s ease-out;
 	height:40px;
 	opacity:1;
 	margin-bottom: 5px;
-/*	display:block;*/
+
 }
 .list-category>li:hover .submenu>li:nth-child(2) a{
 	-webkit-transition: all 0.4s ease-in 2s; 
@@ -653,7 +669,7 @@ ul.menu-cat li a:hover {
 	height:40px;
 	opacity:1;
 	margin-bottom: 5px;
-/*	display:block;*/
+
 }
 .list-category>li:hover .submenu>li:nth-child(3) a{
 	-webkit-transition: all 0.4s ease-in .5s;
@@ -661,8 +677,10 @@ ul.menu-cat li a:hover {
 	height: 40px;
 	opacity:1;
 	margin-bottom: 5px;
-/*	display:block;*/
 }
+*/
+
+
 .list-category .submenu>li>a:hover{
 	background: hotpink;
 	-webkit-transition: all .3s ease 0s !important;
@@ -676,7 +694,7 @@ ul.menu-cat li a:hover {
 	text-decoration: none;
 	padding-left: 20px;
 	box-sizing: border-box;
-	margin-bottom: 13px;
+
 	background: #6FC5C9;
 	border-radius: 0 1px 23px 0;
 	font-size: 1.3em;
@@ -706,7 +724,7 @@ ul.menu-cat li a:hover {
 /*	color: #FFD22A;*/
 	box-shadow: 5px 6px 22px 1px silver;
 }
-.list-category>li>a:hover  .list-category>li>a:before{
+.list-category>li>a:hover .list-category>li>a:before{
 	background: red;
 	width: 16px;
 }
@@ -880,7 +898,7 @@ border-color: #f7a238;
     color: #ffffff;
     font-weight: normal;
     text-decoration: none;
-    padding: 6px 10px 6px 10px;
+    padding:  10px;
     line-height: 22px;
     margin-top: 0px;
 /*    float: left;*/

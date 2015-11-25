@@ -72,8 +72,8 @@
 			<ul class="menu-cat">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Корзина</a></li>
-				<li><a href="#">Отзывы</a></li>
 				<li><a href="#">О нас</a></li>
+				<li><a href="#">Скачать прайс</a></li>
 			</ul>
 		</div>
 		<div class="row">
@@ -90,22 +90,28 @@
 		
 		<div class="menu-category col-md-3">
 			<ul class="list-category">
-				<li><a href="#">Летняя коллекция</a>
+				<li class="menu-but"><a href="#">Летняя коллекция</a>
 					<ul class="submenu">
-						<li><a href="#">Штанишки1</a></li>
-						<li><a href="#">Штанишки2</a></li>
-						<li><a href="#">Штанишки3</a></li>
+						<li><a href="#" class="sub-menu-a">Головные уборы</a></li>
+						<li><a href="#" class="sub-menu-a">Кофты</a></li>
+						<li><a href="#" class="sub-menu-a">Штаны</a></li>
+						<li><a href="#" class="sub-menu-a">Трусишки</a></li>
+						<li><a href="#" class="sub-menu-a">Пижамы</a></li>
+						<li><a href="#" class="sub-menu-a">Царапки</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="#">Зимняя коллекция</a>
+				<li class="menu-but"><a href="#">Зимняя коллекция</a>
 					<ul class="submenu">
-						<li><a href="#">Штанишки1</a></li>
-						<li><a href="#">Штанишки2</a></li>
-						<li><a href="#">Штанишки3</a></li>
+						<li><a href="#" class="sub-menu-a">Головные уборы</a></li>
+						<li><a href="#" class="sub-menu-a">Кофты</a></li>
+						<li><a href="#" class="sub-menu-a">Штаны</a></li>
+						<li><a href="#" class="sub-menu-a">Трусишки</a></li>
+						<li><a href="#" class="sub-menu-a">Пижамы</a></li>
+						<li><a href="#" class="sub-menu-a">Царапки</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Новинки</a></li>
+				<li class=" menu-but"><a href="#">Новинки</a></li>
 			</ul>
 			<div class="choose-price">
 				<p>
@@ -256,7 +262,7 @@
 		</div>
   		</div>
   		
-   	</div><!-- end of center content -->	
+   	</div><!-- end of center content -->
 	</div> <!--container content-wrapper-->
 </div> <!--container wrapper-mainer-->
 <footer class="site-footer">
@@ -269,7 +275,15 @@
 		</div>
 	</div>
 	</div>
-	<div class="footer-copy"><div class="container"><p>Интернет-магазин "Колибри" &copy; 2015-2016 г.</p></div></div>
+	<div class="footer-copy">
+		<div class="container">
+			<p>Интернет-магазин "Колибри" &copy; 2015-2016 г.</p>
+			<div class="social-but">
+			Мы:<a href="#"></a>
+		</div>
+		</div>
+		
+	</div>
 </footer>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -289,6 +303,15 @@
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
 	<script src="libs/landing-nav/navigation.js"></script>
 	<script src="js/common.js"></script>
+<!--
+	<script>
+		$(".search").val("1");
+		var menuButton = $(".list-category").find(".menu-but");
+		menuButton.on('mouseover',function(){
+			$(this).find('.submenu').slideUp(2000);
+		});
+	</script>
+-->
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

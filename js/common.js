@@ -85,26 +85,35 @@ $(document).ready(function() {
 	
 	//Slider price!!!!!
 	 $(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 100, 400 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( ui.values[ 0 ]+"грн." + " - " + ui.values[ 1 ]+"грн." );
-      }
+    	$( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 100, 400 ],
+			slide: function( event, ui ) {
+     			$( "#amount" ).val( ui.values[ 0 ]+"грн." + " - " + ui.values[ 1 ]+"грн." );
+			}
     });
     $( "#amount" ).val($( "#slider-range" ).slider( "values", 0 )+"грн." +
       " - " + $( "#slider-range" ).slider( "values", 1 )+"грн." );
   });
 	
-//	Zomm option !!!!!!!!!!!!!!!!!!!!
-	$('#img-zoom').elevateZoom({
-	tint:true,
-	tintColour:'#F90',
-	easing : true,
-	zoomWindowFadeIn: 500,
-	zoomWindowFadeOut: 350
-	});
-//	Zoom option!!!!!!!!!!!!
+
+	
+//	drop menu!!!!!!!!!!!!!!!!!!!!
+	
+	var menuButton = $(".list-category").find(".menu-but");
+		menuButton.hover(function(){
+			$(this).find('.sub-menu-a').addClass("active-but-menu");
+		},function(){
+			$(this).find('.sub-menu-a').removeClass("active-but-menu");
+		});
+		
+
+	
+	
+	
+	
+//	drop menu!!!!!!!!!!!!!!!!!!!!
+	
 });
