@@ -580,10 +580,14 @@ ul.menu-cat li a:hover {
 	background: #e292c7;
 
 }
-.footer-copy .social-but{
+.social-but{
 	float: right;
-	background: azure;
-	height: 50px;
+	height: 43px;
+	line-height: 38px;
+	width: 174px;
+	font-weight: bold;
+	color: white;
+	font-size: 2em;
 }
 
 .footer-copy p {
@@ -827,7 +831,6 @@ border-color: #f7a238;
 .product-info {
 /*	background: azure;*/
 	border:2px solid #eee;
-	height: 1000px;
 	margin-top: 20px;
 	padding: 20px;
 }
@@ -1255,3 +1258,61 @@ background: linear-gradient(to bottom, rgba(242,247,245,1) 0%,rgba(232,229,249,0
 	box-shadow: inset 0px 0px 65px -15px #61ACAF;
 }
 
+
+
+
+.social-but-vk {
+	background: url(../img/vkontakte-img.jpg) -58px -33px /236px;
+	width: 124px;
+	height: 40px;
+	display: block;
+	float: right;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.social-but-vk:hover {
+	border-color: white;
+}
+
+.social-but-vk:hover .phone-box{
+	border: 20px solid black;
+}
+
+/*!!!!!!!!!!!!UBoutUS Page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.img-aboutus {
+	display: block;
+	height: auto;
+	box-shadow: 0px 7px 29px 9px pink;
+	margin-bottom: 30px;
+	opacity:0 ;
+	transition:opacity 1s linear;
+}
+
+ @font-face {
+    	font-family: BadScript-Regular; /* Имя шрифта */
+    	src: url(../fonts/BadScript-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+.about-us-list{
+	color: black;
+	font-family: BadScript-Regular;
+/*	font-weight: bold;*/
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+
+.about-us-title {
+	font-size: 4.1em;
+}
+
+.info-ubaut-us {
+	font-size: 14px;
+	color: #595959;
+	letter-spacing: .5px;
+	padding-left: 0;
+	text-indent: 20px;
+	margin-bottom: 10px;
+}
