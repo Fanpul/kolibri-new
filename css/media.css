@@ -102,4 +102,30 @@
 		width: 1210px;
 	}
 }
-
+@media(min-width :771px) and (max-width:1220px){
+	.phone-numb{
+		height: 35px !important;
+		line-height: 30px;
+	}
+	.top-line{
+		height: 67px !important;
+	}
+}
+@media (max-width:770px){
+	.logo{
+		margin-bottom: 20px;
+	}
+	.top-line{
+		height: 119px !important;
+	}
+	.phone-numb{
+/*		margin-bottom: 0px;*/
+		height: 35px !important;
+		line-height: 30px;
+		font-size: 15px !important;
+	}
+	.phone-numb-fut{
+		max-width: 320px;
+		font-size: 15px !important;
+	}
+}

@@ -115,7 +115,7 @@ footer {
 }
 
 .top-line {
-	height: 43px;
+	min-height: 43px;
 	line-height: 43px;
 	background: rgba(252, 164, 222, 0.67);
 }
@@ -123,6 +123,8 @@ footer {
 .client-panel{
 	position: relative;
 	float: right;
+	padding-right: 0;
+	margin-right: 0;
 }
 
 .client-panel:hover ul.menu-top {
@@ -165,7 +167,10 @@ ul.menu-top:after {
     border: 5px solid transparent;
 	border-bottom: 5px solid #fff;
 }
-
+.functional{
+	padding: 0;
+	margin: 0;
+}
 ul.menu-top li {
 	padding: 2px 15px;
 	color: #000;
@@ -187,13 +192,13 @@ ul.menu-top li:hover {
 
 header {
 	padding: 20px;
-	height: 125px;
+	min-height: 125px;
 /*	background: brown;*/
 }
 
 .logo {
 /*	background: yellow;*/
-	height: 70px;
+	height: 106px;
 	color: palevioletred;
 	text-decoration: none;
 	line-height: 70px;
@@ -293,7 +298,7 @@ menu li a{
 
 
 .search {
-    width: 178px;
+    min-width: 178px;
     border: none;
     font-size: 12px;
     color: #000;
@@ -306,30 +311,27 @@ menu li a{
 }
 
 .search-wrap {
-	display: inline-block;
+	display: block;
+	float: right;
 	border-radius: 20px 0 0 20px;
 	padding: 0 0 0 12px;
-	float: left;
+	float: right;
     background: #fff;
     border: 2px solid pink;
     border-right: none;
 	height: 32px;
-	width: 210px;
 }
 
 .go-search {
 	width: 31px;
 	height: 32px;
-/*	display: block;*/
 	background:url(../img/search.png) -1px -1px pink;
 	display: block;
-	float: left;
+	float: right;
 	box-sizing: border-box;
-/*	border: 1px solid #DE7D66;*/
 	border: none;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
-/*	box-shadow: -4px 7px 17px -3px brown;*/
 }
 .go-search:hover{
 	background:url(../img/search.png) -1px -1px hotpink;
@@ -600,7 +602,7 @@ ul.menu-cat li a:hover {
 
 .footer-info {
 	background: #FCA4DE;
-	height: 150px;	
+	min-height: 150px;	
 }
 
 .footer-info p {
@@ -1051,9 +1053,7 @@ border-color: #f7a238;
 }
 
 .phone-box {
-	height: 43px;
-	float: left;
-	width: 738px;
+	min-height: 43px;
 	line-height: 43px;
 	border-radius: 20px;
 	text-align: center;
@@ -1069,7 +1069,7 @@ border-color: #f7a238;
 	border-radius: 5px;
 	color: #ffffff;
 	position: relative;
-	margin-left: 15px;
+/*	margin-left: 15px;*/
 /*	box-shadow: inset 0px 0px 16px -1px silver;*/
 }
 .phone-box>span:nth-child(1){
@@ -1288,6 +1288,7 @@ background: linear-gradient(to bottom, rgba(242,247,245,1) 0%,rgba(232,229,249,0
 	box-shadow: 0px 7px 29px 9px pink;
 	margin-bottom: 30px;
 	opacity:0 ;
+	-webkit-transition:opacity 1s linear;
 	transition:opacity 1s linear;
 }
 
@@ -1315,4 +1316,65 @@ background: linear-gradient(to bottom, rgba(242,247,245,1) 0%,rgba(232,229,249,0
 	padding-left: 0;
 	text-indent: 20px;
 	margin-bottom: 10px;
+}
+
+.phone-us {
+	list-style: none;
+	margin-left: 60px;
+	font-size: 20px;
+}
+.phone-us>li{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 40px;
+	position: relative;
+}
+.phone-us>li:nth-of-type(1):before{
+	background: url(../img/kyivstar_icon.png) no-repeat -2px 1px / 45px ;
+	content: "";
+	top: 2px;
+	left: -5px;
+	width: 40px;
+	height: 38px;
+	position: absolute;
+}
+.phone-us>li:nth-of-type(2):before{
+	background: url(../img/mts-icon.png) no-repeat -38px -38px / 76px ;
+	content: "";
+	top: 13px;
+	left: -6px;
+	width: 44px;
+	height: 26px;
+	position: absolute;
+}
+.phone-us>li:nth-of-type(3):before{
+	background: url(../img/life-icon.png) no-repeat -12px -13px / 85px ;
+	content: "";
+	top: 13px;
+	left: -6px;
+	width: 38px;
+	height: 26px;
+	position: absolute;
+}
+.phone-us>li:nth-of-type(4):before{
+	background: url(../img/vk-icon.png) no-repeat -138px -33px ;
+	content: "";
+	top: 13px;
+	left: -6px;
+	width: 38px;
+	height: 26px;
+	position: absolute;
+}
+
+.social-icon-us{
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 46px;
+	position: relative;
+	display: block;
+	margin-left: 55px;
+	font-size: 20px;
+	width: 200px;
+	background: url(../img/Vk-iconr.png) no-repeat 2px 10px;
 }
